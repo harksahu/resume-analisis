@@ -1,0 +1,14 @@
+main{
+    display: flex;
+}
+.contant{
+    background-color: rgb(206, 206, 206);
+    width: 80%;
+    border-radius: 2%;
+}
+.aside ul a{
+    color: black;
+}
+.aside ul li{
+    padding: 20px 0px;
+}

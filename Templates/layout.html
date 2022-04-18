@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='index.css' ) }}">
+
+</head>
+
+<body>
+    <header class="header">
+        <section id="navcontact">
+            <ul>
+
+                <li><a href="mailto:sahupavan000@gmail.com" class="con-head"><i class="fa fa-envelope"></i>
+                        Sahupavan000@gmail.com</a></li>
+                <li><a href="tel:+917000265962" class="con-head"><i class="fa fa-mobile" style="font-size:24px;"></i>
+                        +91
+                        7000265962</a></li>
+                <li class="vl"></li>
+                <li><a href="#" class="con-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-whatsapp"></i></a></li>
+
+            </ul>
+        </section>
+        <nav id="nav">
+            <div id="logo">
+                <a href="/"> <img src="{{ url_for('static' , filename='/img/logo.png') }}" alt="logo" width="50%"></a>
+            </div>
+            <div id="navigation_links">
+                <ul id="navigation">
+                    <a href="#" id="build">Build Resume</a>
+                    <a href="/login" id="sign-button">Login</a>
+
+                    <div>
+                        <li><a href="/contact">Contact us</a></li>
+                        <li><a href="/blogs">Blogs</a></li>
+                        <li><a href="#section5">Template</a></li>
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+
+{% block body %}
+{% endblock %}
+
+   <footer id="foot">
+
+        <ul>
+            <img src="{{ url_for('static' , filename='/img/logo2.png' ) }}" alt="logo" id="logo2" width="30%">
+            <hr id="foot_hr">
+            <p>Copyright © 2022 Resume Analysis. All rights reserved.</p>
+            <ul id="social">
+                <li><a href="#" class="con-link"><i class="fa fa-facebook" style="font-size:24px;"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-instagram" style="font-size:24px;"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-linkedin" style="font-size:24px;"></i></a></li>
+                <li><a href="#" class="con-link"><i class="fa fa-whatsapp" style="font-size:24px;"></i></a></li>
+            </ul>
+
+        </ul>
+        <ul>
+            <h1 id="foot_company">Company</h1>
+            <li class="foot_con"><a href="/">Home</a></li>
+            <li class="foot_con"><a href="#">Template</a></li>
+            <li class="foot_con"><a href="/blogs">Blogs</a></li>
+            <li class="foot_con"><a href="/contact">contact us</a></li>
+
+
+        </ul>
+        <ul>
+            <h1 id="foot_blog">BLOGS</h1>
+            <li class="foot_blog"><a href="#">first blog</a></li>
+            <li class="foot_blog"><a href="#">first blog</a></li>
+            <li class="foot_blog"><a href="#">first blog</a></li>
+        </ul>
+        <ul>
+            <h1 id="foot_contact_us">Get in touch</h1>
+            <div class="foot_con_list">
+                <i class="fa fa-mobile" style="font-size:24px; margin-top: 15px;"></i>
+                <ul class="con">
+                    <li class="con_list">Phone:</li>
+                    <li class="con_list"><a href="tel:+917000265962">+91 7000265962</a></li>
+                </ul>
+
+            </div>
+            <br>
+            <div class="foot_con_list">
+                <i class="fa fa-envelope"></i>
+                <ul class="con">
+                    <li class="con_list">Email:</li>
+                    <li class="con_list"><a href="mailto:sahupavan000@gmail.com">Sahupavan000@gmail.com</a></li>
+                </ul>
+            </div>
+
+        </ul>
+    </footer>
+</body>
+
+</html>

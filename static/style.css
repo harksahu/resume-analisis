@@ -1,0 +1,318 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* contact us links  */
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: all 0.1s ease-in 0.1s;
+    z-index: 1;
+
+}
+#navcontact {
+    background-color: rgb(55, 61, 70);
+    padding: 1px;
+    
+}
+#navcontact ul{
+    
+    text-align: right;
+    padding-right: 200px;
+    
+}
+#navcontact .con-head{
+    padding: 0px 20px;
+}
+#navcontact .con-link{
+    padding: 0px 10px;
+}
+
+#navcontact li{
+    list-style: none;
+    
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#navcontact a{
+    color: white;
+}
+#navcontact a:hover{
+    color: gray;
+}
+
+#subheading{
+    height: 250px;
+    background-color: #b53628;
+    border-bottom: 5px solid #dd6256;
+}
+
+
+
+/* nav bar  */
+
+
+#logo img{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+#nav{
+    background-color: white;
+    height: 100px;
+    display: flex;
+}
+#logo{
+    border-right: 2px solid black;
+    width: 400px;
+    height: 100px;
+}
+
+#navigation_links{
+    width: 1300px;
+    height: 100px;
+
+
+}
+#navigation>div>li>a{
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+#navigation>div>li>a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+#navigation>div>li>a:hover {
+  background-position: 0;
+ }
+ #navigation>div>li>a:hover::before{
+  width: 100%;
+}
+#navigation{
+    list-style: none;
+    display: flex;
+   flex-direction: row-reverse;
+   margin-right: 100px;
+}
+#navigation>div{
+  list-style: none;
+  display: flex;
+ flex-direction: row-reverse;
+ margin-right: 100px;
+}
+#navigation div li{
+   padding: 20px;
+   margin: auto;
+   font-size: 20px;
+   
+
+}
+#navigation>div>li>a{
+    color: black;
+}
+/* #navigation>div>li>a:hover{
+    color: rgb(96, 181, 249);
+    padding-bottom: 15px;
+    text-decoration: underline;
+   font-size: 19.7 px;
+    
+    
+} */
+
+#build{
+    color: black;
+    padding: 20px;
+    border: 2px solid rgb(96, 181, 249);
+    background-color: rgb(96, 181, 249);
+    border-radius: 200px;
+    font-weight: bold;
+}
+
+#build:hover{
+    color: black;
+    background-color: #fff;
+   font-size: 15.8px;
+   
+}
+
+#sign-button{
+    color: black;
+    padding: 20px;
+    border: 2px solid rgb(96, 181, 249);
+    border-radius: 200px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#sign-button:hover{
+    color: black;
+    background-color: rgb(96, 181, 249);
+    font-size: 15.7px;
+
+
+}
+
+
+/* common parts */
+.aside{
+    width: 20%;
+}
+.aside li{
+    list-style: none;
+}
+/* footer */
+
+#footer_form{
+    background: rgb(199, 5, 5) url(footer3-1.jpeg) repeat center ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+#footer_form #foot_form_head{
+  /* border: 2px solid beige;     */
+  padding: 20px;
+  color: white;
+  width: 350px;   
+  }
+#footer_form #foot_form_head h1{
+  /* border: 2px solid beige;     */
+  width: 250px;    
+  }
+#footer_form #foot_form_head h3{
+  /* border: 2px solid beige;     */
+  width: 350px;    
+  }
+  #foot_form{
+      font-size: 50px;
+      padding: 20px;
+      
+  /* border: 2px solid beige;     */
+      
+  }
+#foot_form #formsubmit {
+  height: 60px;
+  width: 305px;
+  font-size: 17px;
+ background-color: rgb(55, 61, 70);
+ color: white;
+
+}
+
+#foot_form #formsubmit:hover{
+  background-color: rgb(202, 60, 60);
+}
+#foot_form input{
+  height: 50px;
+  width: 285px;
+  padding-left: 15px;
+  font-size: 17px;
+
+}
+/* #foot_form textarea{
+  height: 45px;
+  font-size: 17px;
+  width: 285px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 15px;
+} */
+#foot_form select{
+  height: 55px;
+  font-size: 17px;
+  padding-left: 15px;
+  width: 305px;
+}
+
+#foot{
+  background-color: rgb(55, 61, 70);
+  display: flex;
+  color: white;
+  padding: 40px 60px;
+
+}
+#foot>ul{
+    margin: 0px 30px;
+}
+#social{
+  display: flex;
+}
+#social li{
+  padding: 2px 20px;
+}
+#foot li {
+  list-style: none;
+  
+  padding: 5px ;
+}
+
+
+#foot a{
+  color: white;
+
+}
+
+#foot a:hover{
+  text-decoration: underline;
+
+}
+.foot_con_list{
+  display: flex;
+  margin: auto;
+}
+.foot_con_list i{
+  margin-top: 20px;
+}
+
+#subheading{
+  color: white;
+  padding: 0px 180px;
+}
+
+
+#subheading h1{
+  margin: 0px;
+  font-size: 60px;
+  padding-top: 50px;
+}
+#subheading p{
+  font-size: 1rem;
+}
+
+#subheading p a{
+  color: white;
+
+}
+#subheading p a:hover{
+  text-decoration: underline;    
+
+}
+#logo2{
+  margin: 10px;
+}
+#foot_hr{
+    /* width: 30%; */
+}

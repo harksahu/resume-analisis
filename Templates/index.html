@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+    <main>
+        <section id="section1">
+            <div class="title1">
+                <h1>Eye Catcher Resume</h1>
+                <ul>
+                    <li>Time saver</li>
+                    <li>Enjoy a wide range of free Template</li>
+                    <li>Robust text editer</li>
+                </ul>
+                <br><br>
+                <div class="btn-grad">
+                    <a href="#">Build Resume</a>
+                </div>
+
+            </div>
+            <img src="{{ url_for('static' , filename='/img/8619.jpg' ) }}" alt="" width="50%">
+        </section>
+        <hr>
+        <section class="section2">
+            <span>Companies , who found these resume's <span>FASCINATING</span></span>
+            <img src="{{ url_for('static' , filename='/img/company.png' ) }}" alt="company image" width="60%" />
+        </section>
+        <hr>
+        <section class="section3">
+            <img src="{{ url_for('static' , filename='/img/4565.jpg' ) }}" alt="" width="50%">
+
+            <div class="title2">
+                <h1>Selection the companies on the basis of </h1>
+                <ul>
+                    <li>Skill</li>
+                    <li>Qualification</li>
+                    <li>Exprience</li>
+                </ul>
+                <br><br>
+                <div class="btn-grad">
+                    <a href="#">Build Resume</a>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <section class="section4">
+            <a href="#"><img src="{{ url_for('static' , filename='/steps.png' ) }}" alt="Steps" width="100%"></a>
+        </section>
+        <hr>
+        <section id="section5">
+            <h1>Template's</h1>
+            <div id="resume-sliber">
+                <div class="resume">
+                    <img src="{{ url_for('static' , filename='/img/sample.png' ) }}" alt="resume" width="20%">
+                    <div class="btn-grad2 middle">
+                        <a href="#" class="text">Build Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+    </main>
+
+{% endblock %}
